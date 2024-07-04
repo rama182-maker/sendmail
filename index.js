@@ -43,7 +43,7 @@ Mail received from ${fisrtName} ${lastName}!`,
     if (error) {
       return res.status(500).send(error.toString());
     }
-    res.status(200).send("Email envoyé: " + info.response);
+    res.status(200).send("Email sent: " + info.response);
   });
 });
 
